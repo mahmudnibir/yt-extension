@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(145deg, #202124, #2c2f36);
+      color: white;
+      width: 250px;
+      padding: 15px;
+    }
+    button, select, input[type="number"] {
+      width: 100%;
+      margin: 5px 0;
+      padding: 10px;
+      background-color: #444;
+      color: white;
+      border: none;
+      border-radius: 8px;
+    }
+    button:hover {
+      background-color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h3>YT Tweaker</h3>
+  <label>Playback Speed:</label>
+  <select id="speedSelect">
+    <option value="1">Normal</option>
+    <option value="1.5">1.5x</option>
+    <option value="2">2x</option>
+    <option value="3">3x</option>
+  </select>
+  <input type="number" id="customSpeed" placeholder="Custom speed (e.g. 1.75)" step="0.1" min="0.1"/>
+  <button id="applySpeed">Apply Speed</button>
+  <button id="bookmarkBtn">📍 Bookmark Current Time</button>
+</body>
+<script src="popup.js"></script>
+</html>
